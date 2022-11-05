@@ -14,20 +14,20 @@
    <meta name="description" content="">
    <meta name="author" content="">
    <!-- bootstrap css -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
    <!-- style css -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
    <!-- Responsive-->
-   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
    <!-- fevicon -->
-   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
    <!-- Scrollbar Custom CSS -->
-   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
    <!-- Tweaks for older IEs-->
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <!-- owl stylesheets -->
-   <link rel="stylesheet" href="css/owl.carousel.min.css">
-   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 
@@ -42,10 +42,10 @@
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="{{ url_for('home_page') }}">Home</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="health.html">My Health</a>
+                  <a class="nav-link" href="{{ url_for('health_page') }}">My Health</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="medicine.html">Diagnose</a>
@@ -54,10 +54,10 @@
                   <a class="nav-link" href="news.html">Community</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">About Us</a>
+                  <a class="nav-link" href="{{ url_for('contact_page') }}">About Us</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="singup.html">Sign Up</a>
+                  <a class="nav-link" href="{{ url_for('signup_page') }}">Sign Up</a>
                </li>
             </ul>
          </div>
@@ -78,7 +78,7 @@
                            </div>
                         </div>
                         <div class="col-md-6">
-                           <div class="image_1"><img src="images/img-1.png"></div>
+                           <div class="image_1"><img src="{{ url_for('static', filename='images/img-1.png') }}"></div>
                         </div>
                      </div>
                   </div>
@@ -96,7 +96,7 @@
                            </div>
                         </div>
                         <div class="col-md-6">
-                           <div class="image_1"><img src="images/img-1.png"></div>
+                           <div class="image_1"><img src="{{ url_for('static', filename='images/img-1.png') }}"></div>
                         </div>
                      </div>
                   </div>
@@ -114,7 +114,7 @@
                            </div>
                         </div>
                         <div class="col-md-6">
-                           <div class="image_1"><img src="images/img-1.png"></div>
+                           <div class="image_1"><img src="{{ url_for('static', filename='images/img-1.png') }}"></div>
                         </div>
                      </div>
                   </div>
@@ -169,25 +169,25 @@
             <div class="row">
                <div class="col-lg-4 col-sm-6">
                   <div class="box_main">
-                     <div class="icon_1"><img src="images/icon-2.png"></div>
+                     <div class="icon_1"><img src="{{ url_for('static', filename='images/icon-2.png') }}"></div>
                      <h4 class="daily_text">Health records in one place</h4>
                   </div>
                </div>
                <div class="col-lg-4 col-sm-6">
                   <div class="box_main active">
-                     <div class="icon_1"><img src="images/icon-3.png"></div>
+                     <div class="icon_1"><img src="{{ url_for('static', filename='images/icon-3.png') }}"></div>
                      <h4 class="daily_text_1">No need to get your medical tests redone in every hospital.</h4>
                   </div>
                </div>
                <div class="col-lg-4 col-sm-6">
                   <div class="box_main">
-                     <div class="icon_1"><img src="images/icon-4.png"></div>
+                     <div class="icon_1"><img src="{{ url_for('static', filename='images/icon-4.png') }}"></div>
                      <h4 class="daily_text_1">Get help with your mental health instantly.</h4>
                   </div>
                </div>
             </div>
          </div>
-         <div class="getquote_bt"><a href="#">Get Started! <span><img src="images/right-arrow.png"></span></a></div>
+         <div class="getquote_bt"><a href="#">Get Started! <span><img src="{{ url_for('static', filename='images/right-arrow.png') }}"></span></a></div>
       </div>
    </div>
    <!-- news section end -->
@@ -200,9 +200,9 @@
             <div class="col-lg-3 col-sm-6">
                <!-- <div class="footer_logo"><a href="index.html"><img src="images/logo.png"></a></div> -->
                <h1 class="adderss_text">About Us</h1>
-               <div class="map_icon"><img src="images/map-icon.png"><span class="paddlin_left_0">TSSS, Mayapuri</span></div>
-               <div class="map_icon"><img src="images/call-icon.png"><span class="paddlin_left_0">+91 8383072806</span></div>
-               <div class="map_icon"><img src="images/mail-icon.png"><span class="paddlin_left_0">ravigargrud@gmail.com</span></div>
+               <div class="map_icon"><img src="{{ url_for('static', filename='images/map-icon.png') }}"><span class="paddlin_left_0">TSSS, Mayapuri</span></div>
+               <div class="map_icon"><img src="{{ url_for('static', filename='images/call-icon.png') }}"><span class="paddlin_left_0">+91 8383072806</span></div>
+               <div class="map_icon"><img src="{{ url_for('static', filename='images/mail-icon.png') }}"><span class="paddlin_left_0">ravigargrud@gmail.com</span></div>
             </div>
             <div class="col-lg-3 col-sm-6">
                <h1 class="adderss_text">Our Motto</h1>
@@ -224,16 +224,16 @@
    </div>
    <!-- copyright section end -->
    <!-- Javascript files-->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
+   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
    <!-- sidebar -->
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
+   <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
    <!-- javascript -->
-   <script src="js/owl.carousel.js"></script>
+   <script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
    <script>

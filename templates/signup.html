@@ -1,0 +1,46 @@
+<!--Signup page using flask and html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form action="" method="post">
+            <div class="form-group
+            {% if errors.username %}
+                has-error
+            {% endif %}
+            ">
+                <label for="healthID">healthID</label>
+                <input type="text" name="healthID" id="healthID" value="{{ healthID }}">
+                {% if errors.username %}
+                    <span class="help-block
+                    {% if errors.username %}
+                        has-error
+                    {% endif %}
+                    ">{{ errors.username }}</span>
+                {% endif %}
+            </div>
+            <div class="form-group
+            {% if errors.password %}
+                has-error
+            {% endif %}
+            ">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                {% if errors.password %}
+                    <span class="help-block
+                    {% if errors.password %}
+                        has-error
+                    {% endif %}
+            ">{{ errors.password }}</span>
+                {% endif %}
+            </div>
+
+ </form>
+    </div>
+</body>           
+</html>
