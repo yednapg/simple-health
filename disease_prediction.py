@@ -74,9 +74,9 @@ def message():
     if (Symptom1.get() == "None" and  Symptom2.get() == "None" and Symptom3.get() == "None" and Symptom4.get() == "None" and Symptom5.get() == "None"):
         messagebox.showinfo("OPPS!!", "ENTER  SYMPTOMS PLEASE")
     else :
-        NaiveBayes()
+        RandomForest()
 
-def NaiveBayes():
+def RandomForest():
     from sklearn.ensemble import RandomForestClassifier  
     gnb = RandomForestClassifier(n_estimators= 10, criterion="entropy")
     gnb=gnb.fit(X,np.ravel(y))
