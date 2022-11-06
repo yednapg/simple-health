@@ -1,0 +1,220 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  min-width: 100vw;
+  line-height: normal;
+}
+.we-keep-your {
+  font-weight: 200;
+  background: linear-gradient(130.62deg, #020202, #010000);
+}
+.medical-documents,
+.safe-span,
+.we-keep-your {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.medical-documents {
+  background: linear-gradient(130.62deg, #44c7ff, #43e5fb 0.01%, #010000);
+  -webkit-background-clip: text;
+}
+.safe-span {
+  font-weight: 200;
+  background: linear-gradient(118deg, #020202);
+}
+.we-keep-your-medical-documents {
+  position: absolute;
+  top: 211px;
+  left: 153px;
+  display: inline-block;
+  width: 938px;
+  height: 406px;
+}
+.image-18-icon {
+  position: absolute;
+  top: 311px;
+  left: 1168px;
+  width: 651.65px;
+  height: 634px;
+  object-fit: cover;
+}
+.secondary-section {
+  position: absolute;
+  top: 1080px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-cabinet-grotesk);
+}
+.mesh-gradient-10-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2403px;
+  height: 2403px;
+  object-fit: cover;
+}
+.all-your {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.records-in-span {
+  font-weight: 200;
+}
+.one-place1 {
+  font-family: var(--font-epilogue);
+  background: linear-gradient(130.62deg, #fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.one-place {
+  margin: 0;
+}
+.all-your-records-in-one-place {
+  position: absolute;
+  top: 229px;
+  left: 892px;
+  text-align: right;
+  display: inline-block;
+  width: 842.77px;
+  height: 365px;
+  font-family: var(--font-epilogue);
+}
+.image-16-icon,
+.image-17-icon {
+  position: absolute;
+  top: 351.73px;
+  left: 75.13px;
+  border-radius: var(--br-md);
+  width: 777.1px;
+  height: 619.98px;
+  object-fit: cover;
+}
+.image-17-icon {
+  top: 317.75px;
+  left: 148.77px;
+}
+.ellipse-icon,
+.ellipse-icon1 {
+  position: absolute;
+  top: 778px;
+  left: 774px;
+  width: 77px;
+  height: 77px;
+}
+.ellipse-icon1 {
+  top: 371px;
+  left: 310px;
+}
+.line-icon,
+.line-icon1 {
+  position: absolute;
+  top: 831.08px;
+  left: 843px;
+  width: 292.82px;
+  height: 64.92px;
+}
+.line-icon1 {
+  top: 299.15px;
+  left: 378.66px;
+  width: 218.59px;
+  height: 91.75px;
+}
+.data-visualisation,
+.disease-prediction {
+  position: absolute;
+  top: 842px;
+  left: 1159px;
+  font-size: var(--font-size-base);
+  background: linear-gradient(130.62deg, #fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  width: 339px;
+  height: 136px;
+}
+.data-visualisation {
+  top: 194px;
+  left: 554px;
+  font-size: var(--font-size-sm);
+  width: 258px;
+  height: 89.48px;
+}
+.tertiary-div {
+  position: absolute;
+  top: 2160px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+.static-icon {
+  position: absolute;
+  top: calc(50% - 540px);
+  left: calc(50% - 960px);
+  width: 1726px;
+  height: 1631px;
+  object-fit: cover;
+}
+.you-do-span {
+  font-family: var(--font-cabinet-grotesk);
+}
+.we-care-if-you-do {
+  margin: 0;
+  position: absolute;
+  top: calc(50% + 124px);
+  left: calc(50% - 736px);
+  font-size: inherit;
+  background: linear-gradient(130.62deg, #fff, rgba(255, 255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  width: 632px;
+  height: 255.1px;
+  font-family: inherit;
+}
+.group-icon {
+  position: absolute;
+  top: calc(50% - 443px);
+  left: calc(50% + 755.25px);
+  width: 91.5px;
+  height: 66.05px;
+  object-fit: cover;
+}
+.body-div,
+.hero-secion-section {
+  text-align: left;
+  font-family: var(--font-cabinet-grotesk);
+}
+.hero-secion-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray);
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  opacity: 0;
+  font-size: var(--font-size-xl);
+}
+.hero-secion-section.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+.body-div {
+  position: relative;
+  width: 100%;
+  height: 3240px;
+  font-size: var(--font-size-lg);
+}

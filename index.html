@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,200&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="body-div" id="body">
+      <section class="secondary-section" id="secondary">
+        <div class="we-keep-your-medical-documents">
+          <span class="we-keep-your">We keep your </span
+          ><span class="medical-documents">medical documents </span
+          ><span class="safe-span">safe</span>
+        </div>
+        <img class="image-18-icon" alt="" src="public/image-18@2x.png" />
+      </section>
+      <div class="tertiary-div">
+        <img
+          class="mesh-gradient-10-1"
+          alt=""
+          src="public/meshgradient-10-1@2x.png"
+        />
+        <div class="all-your-records-in-one-place">
+          <p class="all-your"><span class="records-in-span">all your </span></p>
+          <p class="all-your">
+            <span class="records-in-span">records in</span>
+          </p>
+          <p class="one-place">
+            <span class="records-in-span"> </span
+            ><b class="one-place1">one place !</b>
+          </p>
+        </div>
+        <img class="image-16-icon" alt="" src="public/image-16@2x.png" /><img
+          class="image-17-icon"
+          alt=""
+          src="public/image-17@2x.png"
+        /><img class="ellipse-icon" alt="" src="public/ellipse-53.svg" /><img
+          class="ellipse-icon1"
+          alt=""
+          src="public/ellipse-53.svg"
+        /><img class="line-icon" alt="" src="public/line-1.svg" /><img
+          class="line-icon1"
+          alt=""
+          src="public/line-2.svg"
+        />
+        <div class="disease-prediction">Disease Prediction 👀</div>
+        <div class="data-visualisation">
+          <p class="all-your">Data</p>
+          <p class="one-place">Visualisation 🔥</p>
+        </div>
+      </div>
+      <section class="hero-secion-section" id="hero" data-animate-on-scroll>
+        <img class="static-icon" alt="" src="public/static@2x.png" />
+        <h1 class="we-care-if-you-do">
+          <p class="all-your"><span class="records-in-span">We Care</span></p>
+          <p class="one-place">
+            <span class="records-in-span">If </span
+            ><span class="you-do-span">You do.</span>
+          </p>
+        </h1>
+        <img class="group-icon" alt="" src="public/logo@2x.png" />
+      </section>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+:root {
+  /* fonts */
+  --font-cabinet-grotesk: "Cabinet Grotesk";
+  --font-epilogue: Epilogue;
+
+  /* font sizes */
+  --font-size-sm: 38.28px;
+  --font-size-base: 58.61px;
+  --font-size-lg: 98.17px;
+  --font-size-xl: 109.26px;
+
+  /* Colors */
+  --color-gray: #010101;
+  --color-white: #fff;
+
+  /* border radiuses */
+  --br-md: 22.46px;
+}
